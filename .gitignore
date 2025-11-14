@@ -1,0 +1,10 @@
+# Ignore large local assets that shouldn't be versioned again
+Task1-Edge-AI/Image_Dataset/
+
+# Virtual environments & editor cruft (common defaults)
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+

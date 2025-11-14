@@ -87,6 +87,10 @@ print(dict(zip(class_names, pred.round(3))))
 PY
 ```
 
+## Version control hygiene
+- The raw dataset directory (`Task1-Edge-AI/Image_Dataset/`) is now excluded via `.gitignore` to keep future commits lightweight. Recreate the folder locally before running the notebook.
+- Large binary artifacts (`model.tflite`, dataset images) are configured for Git LFS in `.gitattributes`. Run `git lfs install` once per machine and commit via LFS if you truly need to version refreshed assets.
+
 ## Next steps
 - Track experiments with notebook metadata or Weights & Biases.
 - Script the pipeline (e.g., `train.py`, `export.py`) for CI automation.
